@@ -114,6 +114,7 @@ INSERT INTO `BooksAuthors` (`AuthorId`, `BookId`) VALUES
 
 CREATE TABLE `Users` (
   `Id` int(11) NOT NULL,
+  `Name` varchar (255) COLLATE utf8_spanish_ci NULL,
   `Email` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
   `Pass` varchar(250) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
