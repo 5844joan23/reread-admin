@@ -7,9 +7,8 @@ if (isset($_POST['email'])) {
     if($userDAO->login($user)){
         header('Location:../view/zona.admin.php');
     }else {
-        header('Location: ../view/login.php');
+        header('Location:../view/login.php');
     }
 }else {
-    header('Location: ../view/login.php');
+    header('Location:../view/login.php');
 }
-?>

@@ -1,5 +1,5 @@
 <?php
-//require_once 'user.php';
+require_once 'user.php';
 class UserDao{
     private $pdo;
     public function __construct(){
@@ -12,7 +12,7 @@ class UserDao{
         $email=$user->getEmail();
         $psswd=$user->getPasswd();
         $sentencia->bindParam(1,$email);
-        $sentencia->bindParam(2,$psswd);
+        $sentencia->bindParam(2,$passwd);
         $sentencia->execute();
         $result=$sentencia->fetch(PDO::FETCH_ASSOC);
         $numRow=$sentencia->rowCount();
